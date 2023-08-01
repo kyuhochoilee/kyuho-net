@@ -1,0 +1,14 @@
+[
+  {
+    "id": "vincirobotics",
+    "title": "Vinci Robotics",
+    "image": "project1.jpg",
+    "category": "Category"
+  },
+  {
+    "id": "project2",
+    "title": "Project Two",
+    "image": "project2.jpg",
+    "category": "Category Two"
+  }
+]
