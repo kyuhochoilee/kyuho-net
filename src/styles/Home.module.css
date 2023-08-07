@@ -1,0 +1,15 @@
+.header {
+  font-weight: bold;
+  font-size: 128px;
+}
+.subHeader {
+  font-style: italic;
+  font-size: 48px;
+}
+.button {
+  padding: 20px;
+  width: 10%;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
