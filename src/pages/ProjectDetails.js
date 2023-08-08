@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import projectDetailsData from "../projectDetailsData.json";
+import projectDetailsData from "../projectDetailsData.js";
 import Navbar from "../components/Navbar";
 import genStyles from "../styles/GenStyles.module.css";
 

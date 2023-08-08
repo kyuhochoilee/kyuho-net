@@ -1,10 +1,26 @@
 .projectContainer {
   background-color: #f8f8f8;
+  position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(248, 248, 248, 0.9);
 }
 
 .title {
   color: #000;
-  text-align: right;
   font-family: Helvetica Neue;
   font-size: 36px;
   font-style: normal;
@@ -14,10 +30,15 @@
 
 .category {
   color: #000;
-  text-align: right;
   font-family: EB Garamond;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
+}
+
+img {
+  height: 400px;
+  width: auto;
+  display: block;
 }

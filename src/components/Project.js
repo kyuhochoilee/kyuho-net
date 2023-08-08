@@ -7,8 +7,10 @@ const Project = ({ title, image, category, projectId }) => {
     <Link to={`/work/${projectId}`} className="project-link">
       <div className={styles.projectContainer}>
         <img src={image} alt={title} />
-        <div className={styles.title}>{title}</div>
-        <div className={styles.category}>{category}</div>
+        <div className={styles.textContainer}>
+          <div className={styles.title}>{title}</div>
+          <div className={styles.category}>{category}</div>
+        </div>
       </div>
     </Link>
   );
