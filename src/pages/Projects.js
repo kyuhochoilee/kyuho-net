@@ -2,10 +2,12 @@ import React from "react";
 import Project from "../components/Project";
 import projectsData from "../projectsData";
 import styles from "../styles/Projects.module.css"; // Import the CSS file
+import Navbar from "../components/Navbar";
 
 const Projects = () => {
   return (
     <div>
+      <Navbar />
       <h1>Projects</h1>
       <div className={styles["project-list"]}>
         {" "}

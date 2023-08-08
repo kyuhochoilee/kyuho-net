@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projectDetailsData from "../projectDetailsData.json";
+import Navbar from "../components/Navbar";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -30,6 +31,7 @@ const ProjectDetails = () => {
 
   return (
     <div>
+      <Navbar />
       {project && (
         <div>
           <h2>{project.title}</h2>
