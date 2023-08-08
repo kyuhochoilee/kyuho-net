@@ -1,9 +1,9 @@
 [
   {
     "id": "vincirobotics",
-    "title": "Vinci Robotics",
-    "image": "project1.jpg",
-    "category": "Category"
+    "title": "vinci robotics",
+    "image": "./img/sample.png",
+    "category": "ui/ux, branding"
   },
   {
     "id": "project2",

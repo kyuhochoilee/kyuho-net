@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import projectDetailsData from "../projectDetailsData.json";
 import Navbar from "../components/Navbar";
+import genStyles from "../styles/GenStyles.module.css";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -30,8 +31,8 @@ const ProjectDetails = () => {
   } = projectDetails;
 
   return (
-    <div>
-      <Navbar />
+    <div className={genStyles.container}>
+      <Navbar pageTitle="MY WORK" />
       {project && (
         <div>
           <h2>{project.title}</h2>

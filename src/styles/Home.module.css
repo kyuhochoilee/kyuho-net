@@ -1,109 +1,318 @@
-.header {
-  font-weight: bold;
-  font-size: 128px;
-  font-family: Helvetica Neue, Arial, sans-serif;
-  height: 145px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+  .header {
+    font-weight: bold;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 50px;
+    height: 60px;
+  }
+  .subHeader {
+    font-style: italic;
+    font-size: 20px;
+    font-family: EB Garamond, serif;
+    padding-left: 2px;
+    width: 80%;
+  }
+  .button {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    width: 200px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .linkContainer {
+    width: 220px;
+  }
+  .rectangles {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 12px;
+    left: 0px;
+    z-index: 1;
+  }
+  .rectangle1 {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background: #0ff;
+  }
+  .rectangle2 {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background: #f0f;
+  }
+  .rectangle3 {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background: #ff0;
+  }
+  .rectangle4 {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background: #000;
+  }
+  .rectangle5 {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .nav {
+    height: 25px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: EB Garamond, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 90%;
+    background: #f2f2f2;
+    padding: 0;
+    position: relative;
+    margin-top: 30px;
+    border-width: 0;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    padding-left: 20px;
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-.subHeader {
-  font-style: italic;
-  font-size: 48px;
-  font-family: EB Garamond, serif;
-  padding-left: 8px;
+@media only screen and (min-width: 900px) {
+  .header {
+    font-weight: bold;
+    font-size: 80px;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    height: 90px;
+  }
+  .subHeader {
+    font-style: italic;
+    font-size: 30px;
+    font-family: EB Garamond, serif;
+    padding-left: 8px;
+  }
+  .button {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 15px;
+    width: 300;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .linkContainer {
+    width: 330px;
+  }
+  .rectangles {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    z-index: 1;
+  }
+  .rectangle1 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #0ff;
+  }
+  .rectangle2 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #f0f;
+  }
+  .rectangle3 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #ff0;
+  }
+  .rectangle4 {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #000;
+  }
+  .rectangle5 {
+    width: 20px;
+    height: 40px;
+    flex-shrink: 0;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .nav {
+    /* margin-top: 20px; */
+    height: 40px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: EB Garamond, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 90%;
+    background: #f2f2f2;
+    padding: 0;
+    position: relative;
+    margin-top: 45px;
+    border-width: 0;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    padding-left: 50px;
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-.button {
-  font-family: Helvetica Neue, Arial, sans-serif;
-  letter-spacing: 10px;
-  font-weight: bold;
-  padding: 20px;
-  width: 400px;
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-  margin-top: 20px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    font-weight: bold;
+    font-size: 128px;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    height: 145px;
+  }
+  .subHeader {
+    font-style: italic;
+    font-size: 40px;
+    font-family: EB Garamond, serif;
+    padding-left: 8px;
+  }
+  .button {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 20px;
+    width: 400px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .linkContainer {
+    width: 440px;
+  }
+  .rectangles {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    z-index: 1;
+  }
+  .rectangle1 {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #0ff;
+  }
+  .rectangle2 {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #f0f;
+  }
+  .rectangle3 {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #ff0;
+  }
+  .rectangle4 {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #000;
+  }
+  .rectangle5 {
+    width: 25px;
+    height: 50px;
+    flex-shrink: 0;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  .nav {
+    /* margin-top: 20px; */
+    height: 50px;
+    font-style: italic;
+    font-size: 24px;
+    font-family: EB Garamond, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 90%;
+    background: #f2f2f2;
+    padding: 0;
+    position: relative;
+    margin-top: 55px;
+    border-width: 0;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    padding-left: 50px;
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
+
 .button:hover {
   background-color: #f2f2f2;
   border-style: solid;
   border-color: black;
 }
-.linkContainer {
-  width: 440px;
-}
-.rectangles {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: 25px;
-  left: 0px;
-  z-index: 1;
-}
-.rectangle1 {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  background: #0ff;
-}
-.rectangle2 {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  background: #f0f;
-}
-.rectangle3 {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  background: #ff0;
-}
-.rectangle4 {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  background: #000;
-}
-.rectangle5 {
-  width: 25px;
-  height: 50px;
-  flex-shrink: 0;
-  background: white;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 0;
-}
 .buttonText {
   text-align: center;
-}
-
-.nav {
-  /* margin-top: 20px; */
-  height: 50px;
-  font-style: italic;
-  font-size: 24px;
-  font-family: EB Garamond, serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  width: 90%;
-  background: #f2f2f2;
-  padding: 0;
-  position: relative;
-  margin-top: 55px;
-  border-width: 0;
-}
-ul {
-  display: flex;
-}
-li {
-  padding-left: 50px;
-  padding-right: 15px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 a:hover {
   color: gray;

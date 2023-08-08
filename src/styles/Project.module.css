@@ -1,0 +1,23 @@
+.projectContainer {
+  background-color: #f8f8f8;
+}
+
+.title {
+  color: #000;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.category {
+  color: #000;
+  text-align: right;
+  font-family: EB Garamond;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}

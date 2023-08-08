@@ -32,7 +32,7 @@ const Home = () => {
         <div className={styles.rectangle5}></div>
         <ul>
           <li>
-            <Link to="/projects">projects</Link>
+            <Link to="/work">work</Link>
           </li>
           <li>
             <Link to="/about">about</Link>
