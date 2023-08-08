@@ -1,9 +1,10 @@
 import sample from "./img/sample.png";
+import vinci from "./img/vinci.png";
 
 const data = {
   vincirobotics: {
     project: {
-      image: sample,
+      image: vinci,
       title: "Vinci Robotics",
       desc: "This is a brief description for this project",
       blurb: "This is room for a blurb.",
