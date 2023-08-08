@@ -10,5 +10,11 @@
     "title": "Project Two",
     "image": "project2.jpg",
     "category": "Category Two"
+  },
+  {
+    "id": "projectHello",
+    "title": "Project Hello",
+    "image": "hello.jpg",
+    "category": "Category Hello"
   }
 ]
