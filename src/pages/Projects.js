@@ -4,6 +4,7 @@ import projectsData from "../projectsData";
 import styles from "../styles/Projects.module.css"; // Import the CSS file
 import Navbar from "../components/Navbar";
 import genStyles from "../styles/GenStyles.module.css";
+import Footer from "../components/Footer";
 
 const Projects = () => {
   return (
@@ -22,6 +23,7 @@ const Projects = () => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

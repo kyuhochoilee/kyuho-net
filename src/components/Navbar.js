@@ -8,12 +8,13 @@ const Navbar = ({ pageTitle }) => {
       {" "}
       {/* Use the className from the CSS Module */}
       <div className={styles.logo}>
-        <div className={styles.rectangles}>
+        <NavLink className={styles.rectangles} exact to="/">
           <div className={styles.rectangle1}></div>
           <div className={styles.rectangle2}></div>
           <div className={styles.rectangle3}></div>
           <div className={styles.rectangle4}></div>
-        </div>
+        </NavLink>
+
         <div className={styles.pageTitle}>{pageTitle}</div>
         <div className={styles.rectangle5}></div>
       </div>

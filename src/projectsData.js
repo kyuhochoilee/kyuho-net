@@ -1,4 +1,6 @@
 import sample from "./img/sample.png";
+import sample2 from "./img/sample2.png";
+
 const data = [
   {
     id: "vincirobotics",

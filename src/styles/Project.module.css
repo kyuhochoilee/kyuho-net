@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .textContainer {
@@ -41,4 +42,11 @@ img {
   height: 400px;
   width: auto;
   display: block;
+  transition: transform 0.5s;
+}
+
+a img:hover {
+  /* position: relative;
+  top: -5px; */
+  transform: scale(1.05);
 }
