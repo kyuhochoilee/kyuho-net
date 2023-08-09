@@ -6,13 +6,18 @@ const data = {
     project: {
       image: vinci,
       title: "Vinci Robotics",
+      categories: [
+        { text: "UI/UX", color: "#D2F2F2" },
+        { text: "BRANDING", color: "#F2D2D2" },
+        { text: "PRODUCT", color: "#D5F2D2" },
+      ],
       desc: "This is a brief description for this project",
       blurb: "This is room for a blurb.",
     },
     info: {
-      role: "Role",
-      tools: "Tools",
-      timeline: "timeline",
+      role: ["Designer", "Developer"],
+      tools: ["Figma", "Illustrator", "Wix"],
+      timeline: "November 2022 - July 2023",
       link: "github/figma link",
     },
     overview: {
@@ -75,6 +80,10 @@ const data = {
       title: null,
       desc: null,
       blurb: null,
+      categories: [
+        { text: null, color: null },
+        { text: null, color: null },
+      ],
     },
     info: {
       role: null,

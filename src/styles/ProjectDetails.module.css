@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-items: left;
 }
 
 .backArrow {
@@ -29,13 +30,33 @@
   justify-content: center;
   width: 500px; /* Adjust the width as needed */
   margin: auto;
+  margin-top: 50px;
 }
 
+h2 {
+  font-family: Helvetica Neue;
+  font-size: 48px;
+  text-transform: lowercase;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+.category {
+  font-family: Helvetica Neue, Arial, Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
 .project {
   align-items: left;
 }
 .info {
-  /* align-items: left; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .overview {
   display: flex;

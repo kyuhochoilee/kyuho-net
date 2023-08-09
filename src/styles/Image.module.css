@@ -9,12 +9,12 @@
   display: inline-block;
   position: relative;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .rectangleContainer:after {
   content: "";
-  rotate: 6deg;
+  rotate: 4deg;
   position: absolute;
   left: 0;
   top: 0;

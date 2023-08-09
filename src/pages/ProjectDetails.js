@@ -37,28 +37,37 @@ const ProjectDetails = () => {
   return (
     <div className={genStyles.container}>
       <Navbar pageTitle="MY WORK" />
-      <NavLink to="/work" className={styles.back}>
-        <img className={styles.backArrow} src={arrow} />
-        <div className={styles.backText}> back</div>
-      </NavLink>
+
       <div className={styles.projectView}>
         {project && (
           <div className={styles.project}>
+            <NavLink to="/work" className={styles.back}>
+              <img className={styles.backArrow} src={arrow} />
+              <div className={styles.backText}> back</div>
+            </NavLink>
             <h2>{project.title}</h2>
+            <div className={styles.categories}>
+              {project.categories.map((category, index) => (
+                <span
+                  key={index}
+                  className={styles.category}
+                  style={{ backgroundColor: category.color }}
+                >
+                  {category.text}
+                </span>
+              ))}
+            </div>
             <Image src={project.image} alt={project.title} />
+            {info && (
+              <div className={styles.info}>
+                <p>My Role: {info.role}</p>
+                <p>Tools Used: {info.tools}</p>
+                <p>Timeline: {info.timeline}</p>
+                <p>Link: {info.link}</p>
+              </div>
+            )}
             <p>{project.desc}</p>
             <p>{project.blurb}</p>
-          </div>
-        )}
-
-        {info && (
-          <div className={styles.info}>
-            <div className={styles.divider}></div>
-            <h3>Info</h3>
-            <p>Role: {info.role}</p>
-            <p>Tools: {info.tools}</p>
-            <p>Timeline: {info.timeline}</p>
-            <p>Link: {info.link}</p>
           </div>
         )}
 
