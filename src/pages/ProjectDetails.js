@@ -4,9 +4,20 @@ import projectDetailsData from "../projectDetailsData.js";
 import Navbar from "../components/Navbar";
 import { NavLink } from "react-router-dom";
 import arrow from "../img/arrow.svg";
+import linkIcon from "../img/link.svg";
+
 import genStyles from "../styles/GenStyles.module.css";
 import styles from "../styles/ProjectDetails.module.css";
 import Image from "../components/Image";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+
+import Footer from "../components/Footer";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -18,21 +29,7 @@ const ProjectDetails = () => {
     return <div>Loading...</div>;
   }
 
-  // Use the title and details from projectDetailsData.json
-  const {
-    project,
-    info,
-    overview,
-    problem,
-    solution,
-    process,
-    research,
-    users,
-    design,
-    test,
-    product,
-    reflection,
-  } = projectDetails;
+  const { project, link, about, info, overview, process } = projectDetails;
 
   return (
     <div className={genStyles.container}>
@@ -42,7 +39,7 @@ const ProjectDetails = () => {
         {project && (
           <div className={styles.project}>
             <NavLink to="/work" className={styles.back}>
-              <img className={styles.backArrow} src={arrow} />
+              <img className={styles.backArrow} src={arrow} alt="Back" />
               <div className={styles.backText}> back</div>
             </NavLink>
             <h2>{project.title}</h2>
@@ -58,114 +55,124 @@ const ProjectDetails = () => {
               ))}
             </div>
             <Image src={project.image} alt={project.title} />
+            <div className={styles.viewLinkButton}>
+              <a className={styles.viewLinkButtonContent} href={link.url}>
+                <img
+                  className={styles.viewLinkButtonLink}
+                  src={linkIcon}
+                  alt=""
+                />
+                <div className={styles.viewLinkButtonText}>{link.display}</div>
+              </a>
+            </div>
+            <div className={styles.about}>
+              <div className={styles.title}>
+                <h3>about the project</h3>
+              </div>
+              <div className={styles.spacer}></div>
+              <p>{about}</p>
+            </div>
             {info && (
               <div className={styles.info}>
-                <p>My Role: {info.role}</p>
-                <p>Tools Used: {info.tools}</p>
-                <p>Timeline: {info.timeline}</p>
-                <p>Link: {info.link}</p>
+                <div className={styles.title}>
+                  <h3>info</h3>
+                </div>
+                <div className={styles.spacer}></div>
+                <div className={styles.desc}>
+                  <div className={styles.desc1}>
+                    <div className={styles.descSub}>ROLE</div>
+                    {info.role.join(", ")}
+                  </div>
+                  <div className={styles.desc1}>
+                    <div className={styles.descSub}>TOOLS</div>
+                    {info.tools.join(", ")}
+                  </div>
+                  <div className={styles.desc1}>
+                    <div className={styles.descSub}>TIMELINE</div>
+                    {info.timeline.join("-")}
+                  </div>
+                </div>
               </div>
             )}
-            <p>{project.desc}</p>
-            <p>{project.blurb}</p>
-          </div>
-        )}
+            {overview && (
+              <div>
+                <div className={styles.dividerContainer}>
+                  <div className={styles.divider}></div>
+                </div>
+                <div className={styles.about}>
+                  <div className={styles.title}>
+                    <h3>project overview</h3>
+                  </div>
+                  <div className={styles.spacer}></div>
+                  <p>{overview}</p>
+                </div>
+              </div>
+            )}
 
-        {overview && (
-          <div className={styles.overview}>
-            <Image src={overview.image} alt={overview.title} />
+            <Accordion
+              allowMultipleExpanded
+              allowZeroExpanded
+              preExpanded={["problem"]}
+              className={styles.accordion}
+            >
+              {projectDetails.process &&
+                Object.keys(projectDetails.process).map((key) => {
+                  const item = projectDetails.process[key];
+                  return (
+                    <AccordionItem
+                      key={key}
+                      uuid={key}
+                      className={styles.accordion__item}
+                    >
+                      <AccordionItemHeading
+                        className={styles.accordionItemHeading}
+                      >
+                        <AccordionItemButton
+                          className={styles.accordion__button}
+                        >
+                          <div className={styles.accordionTitle}>
+                            {item.title}
+                          </div>
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel className={styles.accordion__panel}>
+                        <div>
+                          <Image src={item.image} alt={key} />
+                          <h3>{item.title}</h3>
+                          <div>{item.desc}</div>
+                          <div>{item.blurb}</div>
+                        </div>
 
-            <div className={styles.divider}></div>
-            <div className={styles.text}>
-              <h3>Overview</h3>
-              <p>{overview.desc}</p>
-              <p>{overview.blurb}</p>
-            </div>
-          </div>
-        )}
+                        {item.title2 && (
+                          <div>
+                            {item.image2 && (
+                              <Image src={item.image2} alt={key} />
+                            )}
+                            {item.title2 && <h3>{item.title2}</h3>}
+                            {item.desc2 && <div>{item.desc2}</div>}
+                            {item.blurb2 && <div>{item.blurb2}</div>}
+                          </div>
+                        )}
 
-        {problem && (
-          <div>
-            <h3>Problem</h3>
-            <img src={problem.image} alt={problem.title} />
-            <p>{problem.desc}</p>
-            <p>{problem.blurb}</p>
-          </div>
-        )}
-
-        {solution && (
-          <div>
-            <h3>Solution</h3>
-            <img src={solution.image} alt={solution.title} />
-            <p>{solution.desc}</p>
-            <p>{solution.blurb}</p>
-          </div>
-        )}
-
-        {process && (
-          <div>
-            <h3>Process</h3>
-            <p>Research: {process.research}</p>
-            <p>Users: {process.users}</p>
-            <p>Design: {process.design}</p>
-            <p>Test: {process.test}</p>
-          </div>
-        )}
-
-        {research && (
-          <div>
-            <h3>Research</h3>
-            <img src={research.image} alt={research.title} />
-            <p>{research.desc}</p>
-            <p>{research.blurb}</p>
-          </div>
-        )}
-
-        {users && (
-          <div>
-            <h3>Users</h3>
-            <img src={users.image} alt={users.title} />
-            <p>{users.desc}</p>
-            <p>{users.blurb}</p>
-          </div>
-        )}
-
-        {design && (
-          <div>
-            <h3>Design</h3>
-            <img src={design.image} alt={design.title} />
-            <p>{design.desc}</p>
-            <p>{design.blurb}</p>
-          </div>
-        )}
-
-        {test && (
-          <div>
-            <h3>Test</h3>
-            <img src={test.image} alt={test.title} />
-            <p>{test.desc}</p>
-            <p>{test.blurb}</p>
-          </div>
-        )}
-
-        {product && (
-          <div>
-            <h3>Product</h3>
-            <img src={product.image} alt={product.title} />
-            <p>{product.desc}</p>
-            <p>{product.blurb}</p>
-          </div>
-        )}
-
-        {reflection && (
-          <div>
-            <h3>Reflection</h3>
-            <img src={reflection.image} alt={reflection.title} />
-            <p>Takeaways: {reflection.takeaways}</p>
-            <p>Next Steps: {reflection.nextSteps}</p>
+                        {item.title3 && (
+                          <div>
+                            {item.image3 && (
+                              <Image src={item.image3} alt={key} />
+                            )}
+                            {item.title3 && <h3>{item.title3}</h3>}
+                            {item.desc3 && <div>{item.desc3}</div>}
+                            {item.blurb3 && <div>{item.blurb3}</div>}
+                          </div>
+                        )}
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  );
+                })}
+            </Accordion>
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };
