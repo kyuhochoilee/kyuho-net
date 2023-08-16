@@ -312,11 +312,21 @@
   border-style: solid;
   border-color: black;
 }
+
+.button:hover .buttonText {
+  display: none;
+}
+.button:hover:before {
+  content: "KYUHO@UPENN.EDU";
+  color: black;
+}
+
 .buttonText {
   text-align: center;
 }
+
 a:hover {
-  color: gray;
+  color: black;
 }
 .textContainer {
   display: flex;

@@ -1,0 +1,120 @@
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.imageContainer {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.spacer {
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+.view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+.title {
+  flex-grow: 2;
+  flex-basis: 0%;
+  width: 100%;
+  align-items: end;
+  text-align: right;
+}
+.divider {
+  width: 72.7%;
+  text-align: right;
+  height: 1px;
+  background-color: black;
+
+  margin-bottom: 25px;
+}
+.dividerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sectionContainer {
+  margin-bottom: 50px;
+}
+.pic {
+  max-width: 100%;
+  height: auto;
+}
+
+.rectangleContainer {
+  display: inline-block;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.rectangleContainer:after {
+  content: "";
+  rotate: 4deg;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ebebeb;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.button {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+  width: 200px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.contactTextContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 20%;
+  top: 30%;
+}
+.contactText {
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: EB Garamond;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: black;
+}
+.buttonText {
+  text-align: center;
+}
+a:hover {
+  color: gray;
+}

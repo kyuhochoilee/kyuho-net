@@ -13,11 +13,15 @@ const Home = () => {
         junior @ upenn studying design / psych / computer science
       </div>
       <div className={styles.linkContainer}>
-        <Link to="/contact">
+        <a
+          className={styles.email}
+          href="mailto:kyuho@upenn.edu"
+          target="_blank"
+        >
           <div className={styles.button}>
             <div className={styles.buttonText}>LET'S CONNECT</div>
           </div>
-        </Link>
+        </a>
       </div>
 
       <nav className={styles.nav}>

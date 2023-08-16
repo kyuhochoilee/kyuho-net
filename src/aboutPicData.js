@@ -20,6 +20,11 @@ import rect3 from "./about/about3rect.png";
 const data = [
   {
     id: "pics1",
+    title: "about me",
+    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+    title2: " ",
+    desc2:
+      "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
     rect: rect1,
     image1: image14,
     image2: image11,
@@ -29,6 +34,8 @@ const data = [
   },
   {
     id: "pics2",
+    title: "my process",
+    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
     rect: rect2,
     image1: image25,
     image2: image24,
@@ -38,6 +45,8 @@ const data = [
   },
   {
     id: "pics3",
+    title: "my passions",
+    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
     rect: rect3,
     image1: image35,
     image2: image32,
