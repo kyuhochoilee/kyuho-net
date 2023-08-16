@@ -18,23 +18,23 @@ const Navbar = ({ pageTitle }) => {
         <div className={styles.pageTitle}>{pageTitle}</div>
         <div className={styles.rectangle5}></div>
       </div>
-      <ul>
-        <li>
+      <div className={styles.ulStyles}>
+        <div className={styles.liStyles}>
           <NavLink exact to="/">
             home
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div className={styles.liStyles}>
           <NavLink to="/work" activeClassName={styles.active}>
             work
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div className={styles.liStyles}>
           <NavLink to="/about" activeClassName={styles.active}>
             about
           </NavLink>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   );
 };

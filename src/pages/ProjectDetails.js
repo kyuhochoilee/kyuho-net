@@ -4,6 +4,8 @@ import projectDetailsData from "../projectDetailsData.js";
 import Navbar from "../components/Navbar";
 import { NavLink } from "react-router-dom";
 import arrow from "../img/arrow.svg";
+import arrowGray from "../img/arrowGray.svg";
+
 import linkIcon from "../img/link.svg";
 
 import genStyles from "../styles/GenStyles.module.css";
@@ -55,16 +57,20 @@ const ProjectDetails = () => {
               ))}
             </div>
             <Image src={project.image} alt={project.title} />
-            <div className={styles.viewLinkButton}>
-              <a className={styles.viewLinkButtonContent} href={link.url}>
+            <a
+              className={styles.viewLinkButton}
+              href={link.url}
+              target="_blank"
+            >
+              <div className={styles.viewLinkButtonContent}>
                 <img
                   className={styles.viewLinkButtonLink}
                   src={linkIcon}
                   alt=""
                 />
                 <div className={styles.viewLinkButtonText}>{link.display}</div>
-              </a>
-            </div>
+              </div>
+            </a>
             <div className={styles.about}>
               <div className={styles.title}>
                 <h3>about the project</h3>
@@ -136,32 +142,96 @@ const ProjectDetails = () => {
                         </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel className={styles.accordion__panel}>
-                        <div>
-                          <Image src={item.image} alt={key} />
-                          <h3>{item.title}</h3>
-                          <div>{item.desc}</div>
-                          <div>{item.blurb}</div>
-                        </div>
+                        {item.title && (
+                          <div>
+                            {item.image && (
+                              <div>
+                                {" "}
+                                <Image src={item.image} alt={key} />
+                                <div className={styles.dividerContainer}>
+                                  <div className={styles.divider}></div>
+                                </div>
+                              </div>
+                            )}
+
+                            <div className={styles.about}>
+                              {item.title && (
+                                <div className={styles.title}>
+                                  <h3>{item.title}</h3>
+                                </div>
+                              )}
+                              <div className={styles.spacer}></div>
+                              <p className={styles.descAndBlurb}>
+                                {item.desc && (
+                                  <div className={styles.descSub}>
+                                    <div>{item.desc}</div>
+                                  </div>
+                                )}
+                                {item.blurb && <div>{item.blurb}</div>}
+                              </p>
+                            </div>
+                          </div>
+                        )}
 
                         {item.title2 && (
                           <div>
                             {item.image2 && (
-                              <Image src={item.image2} alt={key} />
+                              <div>
+                                {" "}
+                                <Image src={item.image2} alt={key} />
+                                <div className={styles.dividerContainer}>
+                                  <div className={styles.divider}></div>
+                                </div>
+                              </div>
                             )}
-                            {item.title2 && <h3>{item.title2}</h3>}
-                            {item.desc2 && <div>{item.desc2}</div>}
-                            {item.blurb2 && <div>{item.blurb2}</div>}
+
+                            <div className={styles.about}>
+                              {item.title2 && (
+                                <div className={styles.title}>
+                                  <h3>{item.title2}</h3>
+                                </div>
+                              )}
+                              <div className={styles.spacer}></div>
+                              <p className={styles.descAndBlurb}>
+                                {item.desc2 && (
+                                  <div className={styles.descSub}>
+                                    <div>{item.desc2}</div>
+                                  </div>
+                                )}
+                                {item.blurb2 && <div>{item.blurb2}</div>}
+                              </p>
+                            </div>
                           </div>
                         )}
 
                         {item.title3 && (
                           <div>
                             {item.image3 && (
-                              <Image src={item.image3} alt={key} />
+                              <div>
+                                {" "}
+                                <Image src={item.image3} alt={key} />{" "}
+                                <div className={styles.dividerContainer}>
+                                  <div className={styles.divider}></div>
+                                </div>
+                              </div>
                             )}
-                            {item.title3 && <h3>{item.title3}</h3>}
-                            {item.desc3 && <div>{item.desc3}</div>}
-                            {item.blurb3 && <div>{item.blurb3}</div>}
+
+                            <div className={styles.about}>
+                              {item.title3 && (
+                                <div className={styles.title}>
+                                  <h3>{item.title3}</h3>
+                                </div>
+                              )}
+                              <div className={styles.spacer}></div>
+                              <p className={styles.descAndBlurb}>
+                                {item.desc3 && (
+                                  <div className={styles.descSub}>
+                                    <div>{item.desc3}</div>
+                                  </div>
+                                )}
+                                {item.blurb3 && <div>{item.blurb3}</div>}
+                              </p>
+                            </div>
                           </div>
                         )}
                       </AccordionItemPanel>
@@ -169,6 +239,18 @@ const ProjectDetails = () => {
                   );
                 })}
             </Accordion>
+            <NavLink
+              to="/work"
+              className={styles.viewLinkButton}
+              style={{ marginTop: "50px" }}
+            >
+              <img
+                className={styles.viewLinkButtonLink}
+                src={arrowGray}
+                alt="Back"
+              />
+              <div className={styles.viewLinkButtonText}> BACK TO PROJECTS</div>
+            </NavLink>
           </div>
         )}
       </div>

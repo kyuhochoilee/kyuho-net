@@ -1,25 +1,76 @@
 /* Image.module.css */
+@media only screen and (max-width: 500px) {
+  .pic {
+    max-width: 300px;
+    height: auto;
+  }
 
-.pic {
-  max-width: 800px;
-  height: auto;
+  .rectangleContainer {
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .rectangleContainer:after {
+    content: "";
+    rotate: 4deg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
+@media only screen and (min-width: 500px) {
+  .pic {
+    max-width: 450px;
+    height: auto;
+  }
 
-.rectangleContainer {
-  display: inline-block;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  .rectangleContainer {
+    display: inline-block;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .rectangleContainer:after {
+    content: "";
+    rotate: 4deg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
+@media only screen and (min-width: 1000px) {
+  .pic {
+    max-width: 800px;
+    height: auto;
+  }
 
-.rectangleContainer:after {
-  content: "";
-  rotate: 4deg;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #ebebeb;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  .rectangleContainer {
+    display: inline-block;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .rectangleContainer:after {
+    content: "";
+    rotate: 4deg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }

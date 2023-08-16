@@ -30,15 +30,18 @@ const data = {
       problem: {
         image: sample,
         title: "the problem",
-        desc: "Problem desc This is a brief description for this project",
-        blurb: "Problem This is room for a blurb.",
-        title2: "the problem",
+        desc: "Brief description that is definitely super necessary and helpful for this sort of thing.",
+        blurb:
+          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+        title2: "part two",
         desc2: "Problem desc This is a brief description for this project",
-        blurb2: "Problem This is room for a blurb.",
+        blurb2:
+          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
         image3: sample,
-        title3: "the problem",
+        title3: "part three",
         desc3: "Problem desc This is a brief description for this project",
-        blurb3: "Problem This is room for a blurb.",
+        blurb3:
+          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
       },
       solution: {
         image: sample,
@@ -79,76 +82,79 @@ const data = {
     },
   },
 
-  // project2: {
-  //   project: {
-  //     image: null,
-  //     title: null,
-  //     desc: null,
-  //     blurb: null,
-  //     categories: [
-  //       { text: null, color: null },
-  //       { text: null, color: null },
-  //     ],
-  //   },
-  //   info: {
-  //     role: null,
-  //     tools: null,
-  //     timeline: null,
-  //     link: null,
-  //   },
-  //   overview: {
-  //     image: null,
-  //     title: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   problem: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   solution: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   process: {
-  //     research: null,
-  //     users: null,
-  //     design: null,
-  //     test: null,
-  //   },
-  //   research: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   users: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   design: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   test: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   product: {
-  //     image: null,
-  //     desc: null,
-  //     blurb: null,
-  //   },
-  //   reflection: {
-  //     image: null,
-  //     takeaways: null,
-  //     nextSteps: null,
-  //   },
-  // },
+  project2: {
+    project: {
+      image: vinci,
+      title: null,
+      categories: [
+        { text: null, color: null },
+        { text: null, color: null },
+        { text: null, color: null },
+      ],
+    },
+    link: {
+      url: null,
+      display: null,
+    },
+    about: null,
+    info: {
+      role: [null, null],
+      tools: [null, null, null],
+      timeline: [null, null],
+    },
+    overview: null,
+    process: {
+      problem: {
+        image: null,
+        title: "the problem",
+        desc: null,
+        blurb: null,
+        title2: null,
+        desc2: null,
+        blurb2: null,
+        image3: null,
+        title3: null,
+        desc3: null,
+        blurb3: null,
+      },
+      solution: {
+        image: null,
+        title: "the solution",
+        desc: null,
+        blurb: null,
+      },
+      research: {
+        image: null,
+        title: "research",
+        desc: null,
+        blurb: null,
+      },
+      design: {
+        image: null,
+        title: "design",
+        desc: null,
+        blurb: null,
+      },
+      test: {
+        image: null,
+        title: "test",
+        desc: null,
+        blurb: null,
+      },
+      product: {
+        image: null,
+        title: "Final product",
+        desc: null,
+        blurb: null,
+      },
+      reflection: {
+        image: null,
+        title: "reflection",
+        takeaways: null,
+        nextSteps: null,
+      },
+    },
+  },
 };
 
 export default data;

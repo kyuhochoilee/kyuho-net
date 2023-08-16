@@ -35,3 +35,26 @@
 .link {
   height: 30px;
 }
+
+@media only screen and (max-width: 500px) {
+  .email {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-style: italic;
+    font-family: Helvetica Neue, Arial, Sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .link {
+    height: 20px;
+  }
+}
