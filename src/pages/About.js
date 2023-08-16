@@ -52,7 +52,6 @@ const About = () => {
         ))}
 
         <div className={styles.rectangleContainer}>
-          <img src={rectangle} alt="contact" className={styles.pic} />
           <div className={styles.contactTextContainer}>
             <div className={styles.contactText}>
               don’t be a stranger! say hi at kyuho@upenn.edu :)
@@ -63,8 +62,8 @@ const About = () => {
                 href="mailto:kyuho@upenn.edu"
                 target="_blank"
               >
-                <div className={styles.button}>
-                  <div className={styles.buttonText}>CONTACT ME</div>
+                <div className={styles.button1}>
+                  <div className={styles.buttonText1}>CONTACT ME</div>
                 </div>
               </a>
               <a
