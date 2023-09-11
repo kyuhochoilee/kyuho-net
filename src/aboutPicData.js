@@ -20,11 +20,9 @@ import rect3 from "./about/about3rect.png";
 const data = [
   {
     id: "pics1",
-    title: "about me",
-    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
-    title2: " ",
-    desc2:
-      "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+    title: "hey! i’m kyuho, a digital designer from boston.",
+    title2:
+      " i strive to empower individuals and communities through crafting enjoyable, inclusive experiences.",
     rect: rect1,
     image1: image14,
     image2: image11,
@@ -34,25 +32,15 @@ const data = [
   },
   {
     id: "pics2",
-    title: "my process",
-    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+    title: "community is at the heart of everything i do. ",
+    title2:
+      "i love bringing people together however i can, whether it be through design, service, art, music, or just hanging out!",
     rect: rect2,
-    image1: image25,
+    image1: image32,
     image2: image24,
     image3: image23,
     image4: image22,
     image5: image21,
-  },
-  {
-    id: "pics3",
-    title: "my passions",
-    desc: "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
-    rect: rect3,
-    image1: image35,
-    image2: image32,
-    image3: image34,
-    image4: image33,
-    image5: image31,
   },
 ];
 

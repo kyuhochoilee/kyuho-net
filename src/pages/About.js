@@ -5,7 +5,7 @@ import aboutPicData from "../aboutPicData";
 import ImageAbout from "../components/ImageAbout";
 import styles from "../styles/About.module.css";
 import Footer from "../components/Footer";
-import rectangle from "../about/aboutRectContact.png";
+import picture from "../about/about31.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -13,44 +13,118 @@ const About = () => {
     <div className={genStyles.container}>
       <Navbar pageTitle="MY STORY" />
       <div className={styles.view}>
-        {aboutPicData.map((pic) => (
-          <div className={styles.sectionContainer}>
-            <div className={styles.imageContainer}>
-              <ImageAbout
-                key={pic.id}
-                rect={pic.rect}
-                image1={pic.image1}
-                image2={pic.image2}
-                image3={pic.image3}
-                image4={pic.image4}
-                image5={pic.image5}
-              />
-            </div>
-
-            <div className={styles.dividerContainer}>
-              <div className={styles.divider}></div>
-            </div>
-            <div className={styles.about}>
-              <div className={styles.title}>
-                <h3>{pic.title}</h3>
-              </div>
-              <div className={styles.spacer}></div>
-              <p>{pic.desc}</p>
-            </div>
-            {pic.desc2 && (
-              <div className={styles.about}>
-                {pic.title2 && (
+        {aboutPicData.map((pic, index) => (
+          <div className={styles.sectionContainer} key={pic.id}>
+            {index % 2 === 1 ? ( // Check if the index is odd
+              <>
+                <div className={styles.imageContainer}>
+                  <ImageAbout
+                    rect={pic.rect}
+                    image1={pic.image1}
+                    image2={pic.image2}
+                    image3={pic.image3}
+                    image4={pic.image4}
+                    image5={pic.image5}
+                  />
+                </div>
+                <div className={styles.about}>
                   <div className={styles.title}>
-                    <h3>{pic.title2}</h3>
+                    {pic.title}
+                    <span className={styles.titleRest}>{pic.title2}</span>
                   </div>
-                )}
-                <div className={styles.spacer}></div>
-                <p>{pic.desc2}</p>
-              </div>
+                </div>
+              </>
+            ) : (
+              // Render in the opposite order for even indices
+              <>
+                <div className={styles.about}>
+                  <div className={styles.title}>
+                    {pic.title}
+                    <span className={styles.titleRest}>{pic.title2}</span>
+                  </div>
+                </div>
+                <div className={styles.imageContainer}>
+                  <ImageAbout
+                    rect={pic.rect}
+                    image1={pic.image1}
+                    image2={pic.image2}
+                    image3={pic.image3}
+                    image4={pic.image4}
+                    image5={pic.image5}
+                  />
+                </div>
+              </>
             )}
           </div>
         ))}
+        <div className={styles.dividerThick}>WHAT I’M UP TO</div>
+        <div className={styles.moreInfo}>
+          <div className={styles.moreInfoText}>
+            <div>
+              i like to keep myself busy outside of classes. here’s what i do...
+            </div>
+            <div>
+              <strong>marketing director</strong> for{" "}
+              <a
+                className={styles.link}
+                href="https://web.sas.upenn.edu/penn-cssp/"
+                target="_blank"
+              >
+                community school student partnerships,
+              </a>{" "}
+              the largest student mentorship organization at penn
+            </div>
+            <div>
+              <strong>music director</strong> for{" "}
+              <a
+                className={styles.link}
+                href="https://www.instagram.com/pennkeynotes/"
+                target="_blank"
+              >
+                keynotes a cappella,
+              </a>{" "}
+              a co-ed a cappella group
+            </div>
+            <div>
+              <strong>project lead </strong>and <strong>designer</strong> for{" "}
+              <a
+                className={styles.link}
+                href="https://thesign.al/"
+                target="_blank"
+              >
+                the signal,
+              </a>{" "}
+              a creative collective that supports unconventional paths at penn.
+            </div>
+            <div>
+              i’m also a member of{" "}
+              <a
+                className={styles.link}
+                href="https://www.instagram.com/fad.upenn/?hl=en"
+                target="_blank"
+              >
+                {" "}
+                fad (fine arts and design) board
+              </a>{" "}
+              and penn’s{" "}
+              <a
+                className={styles.link}
+                href="https://www.instagram.com/pennksa/?hl=en"
+                target="_blank"
+              >
+                korean student association.
+              </a>
+            </div>
+            <div>
+              aside from that, i also love writing and producing music, DJing,
+              making digital art, and spending time with family and friends!
+            </div>
+          </div>
 
+          <div className={styles.vertImageSpace}>
+            {/* <img className={styles.vertImageSpaceImage} src={picture} /> */}
+          </div>
+        </div>
         <div className={styles.rectangleContainer}>
           <div className={styles.contactTextContainer}>
             <div className={styles.contactText}>
