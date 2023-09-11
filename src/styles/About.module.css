@@ -3,8 +3,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 25px;
     width: 80%;
+    align-items: center;
+  }
+  .aboutTextOne {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .aboutTextTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
   }
   .imageContainer {
     margin-top: 50px;
@@ -30,7 +40,6 @@
     text-align: right;
     height: 1px;
     background-color: black;
-
     margin-bottom: 25px;
   }
   .dividerContainer {
@@ -40,8 +49,7 @@
   .sectionContainer {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
     align-content: center;
   }
@@ -67,9 +75,6 @@
     margin-top: 70px;
     margin-bottom: 40px;
     width: 70%;
-    /* padding: 10%;
-  padding-left: 25%;
-  padding-right: 25%; */
   }
 
   .rectangleContainer:after {
@@ -167,7 +172,7 @@
   .moreInfo {
     width: 100%;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 200;
     display: flex;
     flex-direction: row;
     padding-top: 45px;
@@ -195,14 +200,9 @@
   }
 
   .vertImageSpaceImage {
-    max-width: 100%;
-    max-height: 100%;
+    object-fit: cover;
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
   }
 }
 
@@ -213,6 +213,16 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
+  }
+  .aboutTextOne {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .aboutTextTwo {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
   }
   .imageContainer {
     margin-top: 10px;
@@ -233,11 +243,16 @@
     width: 90%;
   }
   .title {
-    flex-grow: 2;
-    flex-basis: 0%;
-    width: 100%;
-    align-items: end;
-    text-align: right;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 22px;
+    text-transform: lowercase;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+  }
+  .titleRest {
+    font-weight: 300;
   }
   p {
     padding: 0;
@@ -255,7 +270,6 @@
     flex-direction: row-reverse;
   }
   .sectionContainer {
-    margin-bottom: 50px;
     width: 100%;
   }
   .pic {
@@ -353,6 +367,49 @@
     content: "KYUHO@UPENN.EDU";
     color: black;
   }
+  .moreInfo {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .moreInfoText {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .link {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .vertImageSpace {
+    flex-grow: 1;
+    background-color: #f8f8f8;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Add this line */
+  }
+
+  .vertImageSpaceImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dividerThick {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #525252;
+  }
 }
 @media only screen and (max-width: 400px) {
   .about {
@@ -361,10 +418,6 @@
 
     flex-direction: column;
     margin-top: 0px;
-  }
-  .imageContainer {
-    margin-top: 10px;
-    margin-bottom: 40px;
   }
 
   .view {
@@ -377,134 +430,6 @@
     width: 90%;
   }
   .title {
-    flex-grow: 2;
-    flex-basis: 0%;
-    width: 100%;
-    align-items: start;
-    text-align: left;
-  }
-  .spacer {
-    width: 100%;
-    flex-grow: 1;
-    flex-basis: 0%;
-  }
-  .divider {
-    width: 100%;
-    text-align: left;
-    height: 1px;
-    background-color: black;
-  }
-  .dividerContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 30px;
-  }
-  p {
-    padding: 0;
-  }
-
-  .sectionContainer {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .pic {
-    max-width: 100%;
-    height: auto;
-  }
-  .rectangleContainer {
-    display: inline-block;
-    position: relative;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    /* padding: 10%;
-      padding-left: 25%;
-      padding-right: 25%; */
-  }
-
-  .rectangleContainer:after {
-    content: "";
-    rotate: 4deg;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #ebebeb;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .button {
-    font-family: Helvetica Neue, Arial, sans-serif;
-    letter-spacing: 5px;
-    font-weight: bold;
-    font-size: 10px;
-    padding: 10px;
-    width: 150px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    margin-top: 15px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  .button1 {
-    font-family: Helvetica Neue, Arial, sans-serif;
-    letter-spacing: 5px;
-    font-weight: bold;
-    font-size: 10px;
-    padding: 10px;
-    width: 150px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    margin-top: 15px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .linkContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-  .contactTextContainer {
-    background-color: #f8f8f8;
-    padding: 50px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    left: 20%;
-    top: 30%;
-  }
-  .contactText {
-    text-align: center;
-    color: #000;
-    text-align: center;
-    font-family: EB Garamond;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 15px;
-  }
-  .button:hover {
-    background-color: #f2f2f2;
-    border-style: solid;
-    border-color: black;
-  }
-  .button1:hover {
-    background-color: #f2f2f2;
-    border-style: solid;
-    border-color: black;
-  }
-  .button1:hover .buttonText1 {
-    display: none;
-  }
-  .button1:hover:before {
-    content: "KYUHO@UPENN.EDU";
-    color: black;
+    font-size: 20px;
   }
 }

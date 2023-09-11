@@ -5,8 +5,7 @@ import aboutPicData from "../aboutPicData";
 import ImageAbout from "../components/ImageAbout";
 import styles from "../styles/About.module.css";
 import Footer from "../components/Footer";
-import picture from "../about/about31.png";
-import { Link } from "react-router-dom";
+import picture from "../about/slide2.jpeg";
 
 const About = () => {
   return (
@@ -16,7 +15,7 @@ const About = () => {
         {aboutPicData.map((pic, index) => (
           <div className={styles.sectionContainer} key={pic.id}>
             {index % 2 === 1 ? ( // Check if the index is odd
-              <>
+              <div className={styles.aboutTextTwo}>
                 <div className={styles.imageContainer}>
                   <ImageAbout
                     rect={pic.rect}
@@ -33,10 +32,10 @@ const About = () => {
                     <span className={styles.titleRest}>{pic.title2}</span>
                   </div>
                 </div>
-              </>
+              </div>
             ) : (
               // Render in the opposite order for even indices
-              <>
+              <div className={styles.aboutTextOne}>
                 <div className={styles.about}>
                   <div className={styles.title}>
                     {pic.title}
@@ -53,7 +52,7 @@ const About = () => {
                     image5={pic.image5}
                   />
                 </div>
-              </>
+              </div>
             )}
           </div>
         ))}
@@ -122,7 +121,7 @@ const About = () => {
           </div>
 
           <div className={styles.vertImageSpace}>
-            {/* <img className={styles.vertImageSpaceImage} src={picture} /> */}
+            <img className={styles.vertImageSpaceImage} src={picture} />
           </div>
         </div>
         <div className={styles.rectangleContainer}>
