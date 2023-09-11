@@ -5,7 +5,7 @@ const data = {
   vincirobotics: {
     project: {
       image: vinci,
-      title: "Vinci Robotics",
+      title: "Sample Project",
       categories: [
         { text: "UI/UX", color: "#D2F2F2" },
         { text: "BRANDING", color: "#F2D2D2" },
@@ -17,14 +17,13 @@ const data = {
       display: "VIEW LIVE WEBSITE",
     },
     about:
-      "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+      "This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! ",
     info: {
       role: ["Designer", "Developer"],
       tools: ["Figma", "Illustrator", "Wix"],
       timeline: ["NOV22", "JUL23"],
     },
-    overview:
-      "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+    overview: "This is a Sample Project. New content coming soon! ",
 
     process: {
       problem: {
@@ -32,16 +31,16 @@ const data = {
         title: "the problem",
         desc: "Brief description that is definitely super necessary and helpful for this sort of thing.",
         blurb:
-          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+          "This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! ",
         title2: "part two",
         desc2: "Problem desc This is a brief description for this project",
         blurb2:
-          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+          "This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! ",
         image3: sample,
         title3: "part three",
         desc3: "Problem desc This is a brief description for this project",
         blurb3:
-          "I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. I love making things on wix. Blah blah. I created Vinci Robotics and I really enjoyed it. ",
+          "This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! This is a Sample Project. New content coming soon! ",
       },
       solution: {
         image: sample,

@@ -4,20 +4,20 @@ import sample2 from "./img/sample2.png";
 const data = [
   {
     id: "vincirobotics",
-    title: "vinci robotics",
+    title: "sample project",
     category: "ui/ux, branding",
     image: sample,
   },
   {
     id: "project2",
-    title: "Project Two",
-    category: "Category Two",
+    title: "sample project",
+    category: "product",
     image: sample,
   },
   {
     id: "projectHello",
-    title: "ProjecProjt Hello",
-    category: "Category Hello",
+    title: "sample project",
+    category: "marketing",
     image: sample,
   },
 ];
