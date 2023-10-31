@@ -1,11 +1,12 @@
 import sample from "./img/sample.png";
 import testFlight from "./img/testflight.png";
 import vinci from "./img/vinci.png";
+import thoughts from "./img/thoughts header.png";
 
 const data = {
   thoughts: {
     project: {
-      image: vinci,
+      image: thoughts,
       title: "thoughts",
       categories: [
         { text: "UI/UX", color: "#D2F2F2" },

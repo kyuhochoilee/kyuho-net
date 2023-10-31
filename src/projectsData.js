@@ -1,24 +1,19 @@
 import sample from "./img/sample.png";
-import sample2 from "./img/sample2.png";
+import thoughts from "./img/thoughts.png";
+import isteam from "./img/isteam.png";
 
 const data = [
   {
     id: "thoughts",
     title: "thoughts",
-    category: "product, ui/ux, mobile dev",
-    image: sample,
+    category: "product, ui/ux",
+    image: thoughts,
   },
   {
     id: "project2",
-    title: "sample project",
-    category: "product",
-    image: sample,
-  },
-  {
-    id: "projectHello",
-    title: "sample project",
-    category: "marketing",
-    image: sample,
+    title: "isteam academy",
+    category: "branding, ui/ux",
+    image: isteam,
   },
 ];
 
