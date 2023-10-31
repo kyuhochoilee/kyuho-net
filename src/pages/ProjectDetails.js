@@ -56,7 +56,11 @@ const ProjectDetails = () => {
                 </span>
               ))}
             </div>
-            <Image src={project.image} alt={project.title} />
+            <Image
+              src={project.image}
+              alt={project.title}
+              className={styles.pictureCenter}
+            />
             <a
               className={styles.viewLinkButton}
               href={link.url}
@@ -147,7 +151,11 @@ const ProjectDetails = () => {
                             {item.image && (
                               <div>
                                 {" "}
-                                <Image src={item.image} alt={key} />
+                                <Image
+                                  src={item.image}
+                                  alt={key}
+                                  className={styles.pictureCenter}
+                                />
                                 <div className={styles.dividerContainer}>
                                   <div className={styles.divider}></div>
                                 </div>
@@ -178,7 +186,11 @@ const ProjectDetails = () => {
                             {item.image2 && (
                               <div>
                                 {" "}
-                                <Image src={item.image2} alt={key} />
+                                <Image
+                                  src={item.image2}
+                                  alt={key}
+                                  className={styles.pictureCenter}
+                                />
                                 <div className={styles.dividerContainer}>
                                   <div className={styles.divider}></div>
                                 </div>
@@ -209,7 +221,11 @@ const ProjectDetails = () => {
                             {item.image3 && (
                               <div>
                                 {" "}
-                                <Image src={item.image3} alt={key} />{" "}
+                                <Image
+                                  src={item.image3}
+                                  alt={key}
+                                  className={styles.pictureCenter}
+                                />{" "}
                                 <div className={styles.dividerContainer}>
                                   <div className={styles.divider}></div>
                                 </div>

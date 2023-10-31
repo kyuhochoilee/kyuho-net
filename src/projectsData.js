@@ -3,9 +3,9 @@ import sample2 from "./img/sample2.png";
 
 const data = [
   {
-    id: "vincirobotics",
-    title: "sample project",
-    category: "ui/ux, branding",
+    id: "thoughts",
+    title: "thoughts",
+    category: "product, ui/ux, mobile dev",
     image: sample,
   },
   {
