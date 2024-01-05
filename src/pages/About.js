@@ -63,7 +63,7 @@ const About = () => {
               i like to keep myself busy outside of classes. here’s what i do...
             </div>
             <div>
-              <strong>marketing director</strong> for{" "}
+              <strong>co-director</strong> of{" "}
               <a
                 className={styles.link}
                 href="https://web.sas.upenn.edu/penn-cssp/"
@@ -99,11 +99,11 @@ const About = () => {
               i’m also a member of{" "}
               <a
                 className={styles.link}
-                href="https://www.instagram.com/fad.upenn/?hl=en"
+                href="https://icaphila.org/students/"
                 target="_blank"
               >
                 {" "}
-                fad (fine arts and design) board
+                ica philadelphia's student board
               </a>{" "}
               and penn’s{" "}
               <a

@@ -11,6 +11,7 @@ import linkIcon from "../img/link.svg";
 import genStyles from "../styles/GenStyles.module.css";
 import styles from "../styles/ProjectDetails.module.css";
 import Image from "../components/Image";
+import Image2 from "../components/Image2.js";
 import {
   Accordion,
   AccordionItem,
@@ -120,7 +121,6 @@ const ProjectDetails = () => {
             )}
 
             <Accordion
-              allowMultipleExpanded
               allowZeroExpanded
               preExpanded={["problem"]}
               className={styles.accordion}
@@ -151,7 +151,7 @@ const ProjectDetails = () => {
                             {item.image && (
                               <div>
                                 {" "}
-                                <Image
+                                <Image2
                                   src={item.image}
                                   alt={key}
                                   className={styles.pictureCenter}
@@ -186,7 +186,7 @@ const ProjectDetails = () => {
                             {item.image2 && (
                               <div>
                                 {" "}
-                                <Image
+                                <Image2
                                   src={item.image2}
                                   alt={key}
                                   className={styles.pictureCenter}
@@ -221,7 +221,7 @@ const ProjectDetails = () => {
                             {item.image3 && (
                               <div>
                                 {" "}
-                                <Image
+                                <Image2
                                   src={item.image3}
                                   alt={key}
                                   className={styles.pictureCenter}

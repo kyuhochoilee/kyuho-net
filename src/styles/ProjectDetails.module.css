@@ -72,7 +72,7 @@
 
   h3 {
     font-family: Helvetica Neue, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: lowercase;
     font-weight: 700;
     line-height: normal;
@@ -105,13 +105,12 @@
   .divider {
     width: 100%;
     text-align: left;
-    height: 1px;
+    height: 0.3px;
     background-color: black;
   }
   .dividerContainer {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 30px;
   }
 
   .viewLinkButton {
@@ -143,15 +142,18 @@
   .about {
     display: flex;
     width: 100%;
-
     flex-direction: column;
     margin-top: 30px;
   }
   .info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .info > :first-child {
+    display: none;
   }
   .desc {
     font-family: Helvetica Neue, Arial, sans-serif;
@@ -184,7 +186,7 @@
 * ----------------------------------------------
 **/
   .accordion {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
