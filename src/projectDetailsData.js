@@ -10,6 +10,7 @@ import screens2 from "./img/screens2full.png";
 import screens3 from "./img/screens3.png";
 import expo from "./img/expototestflight.png";
 import splash from "./img/splashscreen.png";
+import wireframes from "./img/wireframes.png";
 
 const data = {
   thoughts: {
@@ -23,7 +24,7 @@ const data = {
       ],
     },
     link: {
-      url: "https://www.isteamacademy.org",
+      url: "https://www.figma.com/file/jS6qHr2eytVyu89gS6ZeM5/Thoughts?type=design&node-id=1-60&mode=design",
       display: "VIEW FIGMA FILE",
     },
     about:
@@ -58,11 +59,11 @@ const data = {
           "To align with all of these features and preferences, I developed a solution: a journal app in the form of social media. I loved the aspects of an Instagram and Twitter account where I could just open up the app spontaneously and just post whatever was on my mind. I also loved how I could curate my own feed to look and feel how I wanted it to. People also loved how these apps could add photos, and some had voice memos and music integration. Finally, journaling apps had great ways of organizing and searching through their entries. Thoughts had developed from a rough idea to the implementation of favorite features of journaling apps within a simple, accessible app.",
       },
       design: {
-        image: "",
+        image: wireframes,
         title: "design",
         desc: "Combining the best of all worlds.",
         blurb:
-          "Based on the information that I gathered from my research, I went in and started wireframing, beginning with rough sketches, transitioning into low fidelity prototypes, and then finalizing a high fidelity prototype that was ready to be developed. At every stage, I seeked and gained valuable feedback from potential users, which helped me streamline my work.",
+          "Based on the information that I gathered from my research, I went in and started wireframing, beginning with rough sketches and low fidelity prototypes, getting feeedback, and then creating a high fidelity prototype that was ready to be developed. At each stage, I seeked and gained valuable feedback from potential users, which helped me streamline my work.",
         image2: figma,
         title2: "dev",
         desc2: "Turning it into something real.",
