@@ -49,7 +49,7 @@ const data = {
         title: "the research",
         desc: "Understanding user preferences and pain points.",
         blurb:
-          "I carried out two main forms of research before beginning the app. The first was a simple survey which I sent out to friends and family. Through this survey, which you can view here, I uncovered a lot of interesting information that helped me get a good idea of what people were looking for. Unfortunately, my data set was not too large, due to various limitations, so the vast majority of people surveyed were students or young professionals. Above is the overview of the data.",
+          "I carried out two main forms of research before beginning the app. The first was a simple survey which I sent out to friends and family. Through this survey, I uncovered a lot of interesting information that helped me get a good idea of what people were looking for. Unfortunately, my data set was not too large, due to various limitations, so the vast majority of people surveyed were students or young professionals. Above is the overview of the data. Next, I looked at current competitors in the market, and observed their UI, which I took inspiration from during the development of my wireframes.",
       },
       solution: {
         image: journalApps,

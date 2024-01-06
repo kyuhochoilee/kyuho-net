@@ -122,7 +122,7 @@ const ProjectDetails = () => {
 
             <Accordion
               allowZeroExpanded
-              preExpanded={["problem"]}
+              // preExpanded={["problem"]}
               className={styles.accordion}
             >
               {projectDetails.process &&
