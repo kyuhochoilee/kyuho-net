@@ -11,6 +11,13 @@ import screens3 from "./img/screens3.png";
 import expo from "./img/expototestflight.png";
 import splash from "./img/splashscreen.png";
 import wireframes from "./img/wireframes.png";
+import isteamhome from "./img/isteamscreenshot.png";
+import isteamdesigncrit from "./img/isteamdesigncrit.png";
+import isteamlogo from "./img/isteamlogo.png";
+import isteamscreens2 from "./img/isteamscreens2.png";
+import isteamsticker from "./img/isteamsticker.png";
+import vincipics from "./img/vincipics.png";
+import isteamscreens from "./img/isteamscreens.png";
 
 const data = {
   thoughts: {
@@ -112,74 +119,61 @@ const data = {
 
   project2: {
     project: {
-      image: vinci,
-      title: null,
+      image: isteamhome,
+      title: "isteam academy",
       categories: [
-        { text: null, color: null },
-        { text: null, color: null },
+        { text: "BRANDING", color: "#F2D2D2" },
+        { text: "UI/UX", color: "#D2F2F2" },
         { text: null, color: null },
       ],
     },
     link: {
-      url: null,
-      display: null,
+      url: "https://www.isteamacademy.org/",
+      display: "VIEW WEBSITE",
     },
-    about: null,
+    about:
+      "Back in October 2022, I joined Vinci Robotics Academy, a local organization that offered STEM classes for kids, as a web developer. After I created a new website for Vinci, I was asked to lead the branding and strategy for their non-profit project, iSTEAM Academy. iSTEAM Academy is a registered 501(c)(3) nonprofit organization that offers free robotics classes for students with special needs in the Boston area. Their mission resonated strongly with me, so I happily took on the project, and this is the result! This was certainly one of my most educational and fulfilling experiences, and I’m proud to say that my work has had a direct positive impact on the organization, as well as the communities that have supported me throughout my life.",
     info: {
-      role: [null, null],
-      tools: [null, null, null],
-      timeline: [null, null],
+      role: ["Designer", "Developer"],
+      tools: ["Illustrator", "Photoshop", "Wix"],
+      timeline: ["Summer '23"],
     },
-    overview: null,
+    overview:
+      "My role was to lead the branding and strategy of iSTEAM as they pivoted from being a section of Vinci Robotics to its own non-profit organization. I first conducted initial interviews of current parents and students, as well as design critiques of similar organizations, to get a better idea of what iSTEAM’s branding should communicate. I then translated these insights into designing iSTEAM’s logo, brand language, and website.",
     process: {
-      problem: {
-        image: null,
-        title: "the problem",
-        desc: null,
-        blurb: null,
-        title2: null,
-        desc2: null,
-        blurb2: null,
-        image3: null,
-        title3: null,
-        desc3: null,
-        blurb3: null,
-      },
-      solution: {
-        image: null,
-        title: "the solution",
-        desc: null,
-        blurb: null,
-      },
       research: {
-        image: null,
-        title: "research",
-        desc: null,
-        blurb: null,
+        image: vincipics,
+        title: "the research",
+        desc: "Understanding the brand.",
+        blurb:
+          "Due to the scope of the project, as well as its community-oriented focus, I felt as though a qualitative approach to data collection would be better for iSTEAM. So, I started this project by talking to the board members of Vinci, as well as current staff and students that were running the first iteration of the non-profit. I asked them about their experiences with the program, as well as the motives behind their work. Throughout my conversations, I found that there was a common understanding and passion for inclusivity, collaboration, and learning across all of the people I interviewed. This, along with the classes that I was able to sit in on, showed to me that the main brand values that iSTEAM held were that it was a down-to-earth place for support, positivity, and growth.",
+        image2: isteamdesigncrit,
+        title2: "design critiques",
+        blurb2:
+          "To confirm these ideas, I wanted to interview parents of the children who were taking the classes, but unfortunately I was unable to get a hold of any of them, since there were not that many students at the time. This is definitely a big gap that I wish I was able to account for, but was unable to with the time and resources I was given. However, to compensate for this lack of research, I decided to go online and look for successful organizations that did similar work, to get a better understanding of the visuals and the language that I should be using with iSTEAM.",
       },
       design: {
-        image: null,
-        title: "design",
-        desc: null,
-        blurb: null,
+        image: isteamlogo,
+        title: "the brand",
+        desc: "Turning my insights into something.",
+        blurb:
+          "I wanted to make something that was clear and simple. I didn’t want to overcomplicate or modernize the logo, since at its core, iSTEAM was simply a passionate group of students and professionals who wanted to give back to children with special needs in the local community.",
+        image2: isteamsticker,
+
+        title2: "behind the logo",
+        blurb2:
+          "I went with a gear in the shape of a lightbulb to represent the STEM aspect in it, while emphasizing the idea of creativity and positivity. The fonts I chose for the iSTEAM Academy text was more lighthearted, and aimed to show how the organization was oriented towards children.",
       },
       test: {
-        image: null,
-        title: "test",
+        image: isteamscreens,
+        title: "the website",
         desc: null,
-        blurb: null,
-      },
-      product: {
-        image: null,
-        title: "Final product",
-        desc: null,
-        blurb: null,
-      },
-      reflection: {
-        image: null,
-        title: "reflection",
-        takeaways: null,
-        nextSteps: null,
+        blurb:
+          "Having already created a website for Vinci before, I had some experience going into this one. However, this time, I was able to start this website from scratch. I based the structure of the site on my prior research of similar websites, but aimed to maintain the light-hearted, yet professional feeling of iSTEAM’s branding throughout the entire website. I was also responsible for writing up most of the content on the page, so I tried my best to create a brand voice that was consistent across pages.",
+        title2: "final thoughts",
+        image2: isteamscreens2,
+        blurb2:
+          "Overall, I’m really happy about how this project turned out. iSTEAM is now finishing up its first full year as a registered non-profit! Being able to use my design skills to actively support the my hometown community is incredibly fulfilling and fun. The link to the website is at the top of this page, so feel free to check it out!",
       },
     },
   },
