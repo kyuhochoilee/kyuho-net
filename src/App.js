@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
-    <Router>
+    <Router style={{ backgroundColor: "white" }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
