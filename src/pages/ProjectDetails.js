@@ -122,6 +122,7 @@ const ProjectDetails = () => {
 
             <Accordion
               allowZeroExpanded
+              allowMultipleExpanded
               // preExpanded={["problem"]}
               className={styles.accordion}
             >
