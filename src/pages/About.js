@@ -74,7 +74,7 @@ const About = () => {
               the largest student mentorship organization at penn
             </div>
             <div>
-              <strong>president</strong> for{" "}
+              <strong>president</strong> of{" "}
               <a
                 className={styles.link}
                 href="https://www.pennkeynotes.com/"

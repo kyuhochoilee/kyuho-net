@@ -35,6 +35,19 @@ import keynotes51 from "./img/keynotes5.1-min.png";
 import keynotes52 from "./img/keynotes5.2-min.png";
 import keynotes53 from "./img/keynotes5.3-min.png";
 import keynotes61 from "./img/keynotes6.1-min.png";
+import soundcloud from "./img/soundcloudheader.png";
+import soundcloud11 from "./img/soundcloud11-min.png";
+import soundcloud12 from "./img/soundcloud12-min.png";
+import soundcloud13 from "./img/soundcloud13-min.png";
+import soundcloud21 from "./img/soundcloud21-min.png";
+import soundcloud31 from "./img/soundcloud31-min.png";
+import soundcloud32 from "./img/soundcloud32-min.png";
+import soundcloud33 from "./img/soundcloud33-min.png";
+import soundcloud41 from "./img/soundcloud41-min.png";
+import soundcloud42 from "./img/soundcloud42-min.png";
+import soundcloud43 from "./img/soundcloud43-min.png";
+import soundcloud51 from "./img/soundcloud51-min.png";
+import soundcloud61 from "./img/soundcloud61.png";
 
 const data = {
   thoughts: {
@@ -308,6 +321,106 @@ const data = {
         desc: "Overall, my work with Keynotes has been nothing short of rewarding.",
         blurb:
           "It’s an amazing community with fantastic people that I love spending time with. I think that’s definitely why I always make time to be super extra with these show themes and productions. At the end of the day, I’ve really enjoyed the time that I’ve invested in the group, and I hope it really shows. I’m now starting my role as the President, so I’ll keep this page updated with the newest shows!",
+      },
+    },
+  },
+  soundcloud: {
+    project: {
+      image: soundcloud,
+      title: "soundcloud redesign",
+      categories: [{ text: "UI/UX CASE STUDY", color: "#D2F2F2" }],
+    },
+    link: {
+      url: "https://www.figma.com/file/l31t2VF0AC70FjCYyANz0T/Soundcloud-Redesign?type=design&node-id=0%3A1&mode=design&t=UZo0zk17Apdj9ukk-1",
+      display: "VIEW FIGMA FILE",
+    },
+    about:
+      "Oh, SoundCloud. It was my first ever music streaming service way back in elementary school. Though it’s been years since I switched over to Spotify, SoundCloud is probably my next most used platform. The part that I love most about SoundCloud is the fact that there are fewer restrictions on who can upload what. I’ve used it for years to upload my music, and recently I’ve also started to use it to find new songs for my DJ sets. However, I’ve always found it a bit difficult to use when actually listening to the music I find, especially on mobile.",
+    info: {
+      role: ["Designer"],
+      tools: ["Figma"],
+      timeline: ["January '24"],
+    },
+    overview:
+      "I wanted to find a way to redesign the interface of SoundCloud’s music playback screen so that it would be more conducive to continued usage. I started by critiquing the current app, then quickly moved to wireframing. From there, I iterated through a ton of different layouts, conducted user testing at each stage, and ultimately arrived at a final design which seemed to work best.",
+    process: {
+      problem: {
+        image: soundcloud11,
+        title: "the problem",
+        desc: "SoundCloud is not your average streaming app.",
+        blurb:
+          "When looking at SoundCloud as a whole, it’s clear that though it is a music streaming service, its priorities are different than most. Much of SoundCloud’s emphasis has been on its social end, being one of the only streaming services that support like counts and comments on its tracks. SoundCloud does not require conventional music distribution providers to put tracks online, making it an environment more conducive to music discovery. However, this overt focus on music discovery and sharing has abandoned the core of any music streaming app — the listening experience. I love discovering music on SoundCloud, but if I find a song that can only be found on a platform that doesn’t encourage continued listening, I will end up going back to my typical streaming apps and forgetting about the song. So what exactly is causing these issues in the user experience?",
+        image2: soundcloud12,
+        desc2:
+          "At first glance, the main music playback screen is very unconventional.",
+        title2: "the good",
+        blurb2:
+          "This leads to a very unmistakably SoundCloud-esque feel to the app. Track timelines are displayed by SoundCloud’s iconic wave form, which supports scrubbing throughout the song. As the song plays, user-generated comments pop up at specific points in time. Like counts and comment counts are clearly visible, along with easy access to sharing.",
+        image3: soundcloud13,
+        desc3: "However, this app has its issues.",
+        title3: "the bad",
+        blurb3:
+          "Playback controls are hidden, as they are nearly entirely gesture-based. Shuffle and loop are placed under the Next Up screen, and there is no way to access the current playlist or album of the song. In terms of aesthetics, the album art, which is uploaded as a square, is cropped to fill the entire screen as a background. Pausing the track blurs the background entirely, and leaves you with a dull gray screen. Buttons and icons look a bit dated, and there are a handful of them on the screen that perform similar actions. Overall, these factors come together to create a clunky, one-song-at-a-time listening experience that has now become a SoundCloud trademark. But it doesn’t have to be that way!",
+      },
+      solution: {
+        image: soundcloud21,
+        title: "the solution",
+        desc: "Designing to orient the user.",
+        blurb:
+          "To remedy the issue of a lack of prolonged use within the SoundCloud app, I wanted to create a sense of location for the user. Though you are using SoundCloud to listen to tracks one at a time, it should also keep the user oriented on where they are, what playlist or album they’re listening to, what’s coming next. The new user should be able to easily navigate to different songs, which would not only make prolonged usage easier, but make the music discovery aspect of the app much more intuitive.",
+        image2: null,
+        desc2: null,
+        title2: "goals",
+        blurb2:
+          "Thus, the goal was to reintroduce playback buttons, add a more intuitive playlist and Next up view, and concentrate the clutter into fewer, more functional buttons. I also wanted to make some aesthetic improvements, and try to modernize the interface a bit. However, I wanted to ensure that the things that make SoundCloud unique were not lost. This meant maintaining the emphasis on likes, comments, and user profiles, as well as keeping the easily scrubbable waveform. However, trying to implement all of these new buttons and features while maintaining simplicity was a huge challenge.",
+      },
+      design: {
+        image: soundcloud31,
+        title: "the main screen",
+        desc: "Empowering the user through simplicity.",
+        blurb:
+          "The first screen of my design is what the entire user flow is centered around - the song view. Right from the top, there are some changes - namely, the playlist name is now displayed at the top. This is so that the user is oriented in where they are within the SoundCloud ecosystem, and has a stronger idea of what music they are listening to. On the top right, there is an ellipsis button which used to be on the bottom right of the old design, where the user can perform a host of actions, but most importantly, they can share. I chose to omit the share button from this design, as I felt having two ways to share was redundant, and I wanted to keep the focus on the listener exploring within the SoundCloud app. The title of the song is displayed on the top left, and the username of the uploader is on the top right, in a chip-like format. In the current design, following the user is separated from the actual displayed username. However, I felt like combining it with their picture and the ability to follow would give the username much more presence on the screen, encouraging users to explore new artists and following them!",
+        image2: soundcloud32,
+        desc2: null,
+        title2: "art & the sound cloud",
+        blurb2:
+          "The album art is now fully displayed on the screen, as there is a lot of album art with text that was constantly getting cut off by the original SoundCloud interface. Next, the comment section will work similarly as it does on the app, with comments popping up at specific time intervals. However, I’ve combined the comments button with the text bubbles of comments popping up. Tapping on the comment would take you to the comment section, with the particular comment highlighted. When there are no comments, it will show the ability to view/add comments instead. Next, I’ve continued the implementation of the SoundCloud waveform, with scrubbing still supported. Though the waveform is shorter than the current app’s during normal playback, when scrubbing, the waveform expands to its typical height. However, I changed the color from the SoundCloud orange to a color based on the album art. I felt as though the color orange is becoming less central to their brand, as their app icon was recently updated to be all black. Finally, scrubbing no longer grays out the entire background, and rather blurs it a bit. These modifications allow me to modernize parts of their brand and keep the user connected to the listening experience, all while staying true to its original values.",
+        image3: soundcloud33,
+        desc3: null,
+        title3: "playback controls",
+        blurb3:
+          "Finally, we get to the bottom of the app - the playback controls. In the original app, these were only visible when the songs were paused, and otherwise relied on gestures. Moreover, the shuffle and loop buttons were hidden within the Next up page. However, I feel like as a music app, having playback controls visible is an essential component. Having the actual buttons make it look more like a music app, rather than an audio file hosting app. Thus, I added a tab at the bottom which has play, forward/backwards, shuffle, and the like button. I chose to bring out the shuffle button to add to the feeling of control that the user has, as it is a commonly used button especially in the context of playlists and albums. I put the like button on the tab because I thought it could be used for more than just a like — when you like the song, you could be given a prompt to add it to a playlist if you want. I felt as though the loop button, though conventionally in the main playback controls, was not as often used, and it may have more usage when viewed in the context of what’s Next up. Now, the Next up button has been replaced with a handle, which expands to show the tab. We’ll get into that in the next section.",
+      },
+      test: {
+        image: soundcloud41,
+        title: "the flow",
+        desc: "The Next up screen plays a crucial role in this new design.",
+        blurb:
+          "The Next up screen is now accessible by a simple swipe. I thought that would be a much more intuitive and slick way to view what’s going to play next, while clearing out the clutter on the main screen. From here, I added a view for the playlist/album that the song was a part of, to maintain that sense of control. I removed the harsh red minuses on the original app, and replaced it with a swipe to delete. I added an add button, so that users could add more songs into the queue. Last, but not least, I replaced the like button with the repeat button just for this screen, as users are probably less likely to want to like a song while looking at their Next up, and much more likely to want to loop.",
+        image2: soundcloud42,
+        desc2: null,
+        title2: "comments",
+        blurb2:
+          "The comment section is more or less the same, with overall aesthetic adjustments, as well as the addition of another ellipsis button that would take the user to the same screen as the main screen’s ellipsis button. This is because when users are viewing comments, they could be more invested in the song, and thus more likely to want to share.",
+        image3: soundcloud43,
+        desc3: null,
+        title3: "sharing & more",
+        blurb3:
+          "Lastly, the screen that shows up when touching the ellipsis button on the main screen takes you to a screen that has a ton of song-specific controls, such as sharing, starting a station, adding to playlists, reposting, and more. This was similar to the function of the ellipsis button on the original app, but is more essential to this layout, as it is the only way to access the share function.",
+      },
+      research: {
+        image: soundcloud51,
+        title: "the process",
+        desc: "Iterate, iterate, iterate!",
+        blurb:
+          "Though this final product looks quite sleek, it took a ton of iterations to get to the stage that it is at right now. I got feedback at each stage, which helped inform which parts were working and which parts were not. For example, the very first iteration was liked, but some said that it still felt cluttered, and controls were seemingly overlapping. Furthermore, there were no ways to share, which was a large issue. As I went through more iterations, experimenting with different button layouts, I considered hiding the playback controls, moving around the social buttons, and much more. At one point, I thought I was done, but I got feedback that there were too many buttons, and I got back to tinkering around. You can view my experimenting at every stage in the Figma, which is linked above — it took a lot of time, but I think I came to a great conclusion.",
+      },
+      reflection: {
+        image: soundcloud61,
+        title: "reflections",
+        desc: "What went well? What could I do better?",
+        blurb:
+          "This experience was certainly educational, and I had a lot of fun doing it. As someone who is really into music, as well as someone who had used the platform a bunch, I felt as though I was able to better analyze the design tradeoffs and come to a conclusion that both enhances its functionality and improves its user-friendliness. If SoundCloud were to implement this today, I would definitely be using it to find new music. A final, but important note: if I were to implement this in the real world, this design is certainly not complete — data from users and further testing would be required before moving forward. But, what I have right now was the best I feel I could make with my requirements and limited testing pool and resources. Thanks for reading!",
       },
     },
   },
