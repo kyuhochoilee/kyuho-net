@@ -74,10 +74,10 @@ const About = () => {
               the largest student mentorship organization at penn
             </div>
             <div>
-              <strong>music director</strong> for{" "}
+              <strong>president</strong> for{" "}
               <a
                 className={styles.link}
-                href="https://www.instagram.com/pennkeynotes/"
+                href="https://www.pennkeynotes.com/"
                 target="_blank"
               >
                 keynotes a cappella,
