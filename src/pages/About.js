@@ -140,7 +140,7 @@ const About = () => {
                 </div>
               </a>
               <a
-                href="https://drive.google.com/file/d/1E5eWgE95D1LtoCi6vUF2PF6S-OCcfoMB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TgKrv-7bE6TGvCO9_Dg8N8GGFCxUBZHR/view?usp=sharing"
                 target="_blank"
               >
                 <div className={styles.button}>

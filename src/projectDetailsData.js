@@ -18,6 +18,23 @@ import isteamscreens2 from "./img/isteamscreens2.png";
 import isteamsticker from "./img/isteamsticker.png";
 import vincipics from "./img/vincipics.png";
 import isteamscreens from "./img/isteamscreens.png";
+import keynotes from "./img/keynotes cover 2.png";
+import keynotes11 from "./img/keynotes1.1-min.png";
+import keynotes12 from "./img/keynotes1.2-min.png";
+import keynotes13 from "./img/keynotes1.3-min.png";
+import keynotes21 from "./img/keynotes2.1-min.png";
+import keynotes22 from "./img/keynotes2.2-min.png";
+import keynotes23 from "./img/keynotes2.3-min.png";
+import keynotes31 from "./img/keynotes3.1-min.png";
+import keynotes32 from "./img/keynotes3.2-min.png";
+import keynotes33 from "./img/keynotes3.3-min.png";
+import keynotes41 from "./img/keynotes4.1-min.png";
+import keynotes42 from "./img/keynotes4.2-min.png";
+import keynotes43 from "./img/keynotes4.3-min.png";
+import keynotes51 from "./img/keynotes5.1-min.png";
+import keynotes52 from "./img/keynotes5.2-min.png";
+import keynotes53 from "./img/keynotes5.3-min.png";
+import keynotes61 from "./img/keynotes6.1-min.png";
 
 const data = {
   thoughts: {
@@ -25,9 +42,8 @@ const data = {
       image: thoughts,
       title: "thoughts",
       categories: [
+        { text: "DEV", color: "#D5F2D2" },
         { text: "UI/UX", color: "#D2F2F2" },
-        { text: "BRANDING", color: "#F2D2D2" },
-        { text: "PRODUCT", color: "#D5F2D2" },
       ],
     },
     link: {
@@ -37,7 +53,7 @@ const data = {
     about:
       "I’ve always been a huge fan of journaling. However, when I started college, my life started getting extra busy and cluttered, and I found journaling to be a great way to gather my thoughts and reset at the end of each day. I tried a bunch of different ways of journaling; physical journals, different apps, but found that none of them quite worked for me. So, when my internship ended this past summer, I brought an idea of a journaling app to a friend and together, we created Thoughts.",
     info: {
-      role: ["Designer", "Developer"],
+      role: ["Developer", "Designer"],
       tools: ["Figma", "React Native"],
       timeline: ["August '23"],
     },
@@ -117,7 +133,7 @@ const data = {
     },
   },
 
-  project2: {
+  isteam: {
     project: {
       image: isteamhome,
       title: "isteam academy",
@@ -174,6 +190,124 @@ const data = {
         image2: isteamscreens2,
         blurb2:
           "Overall, I’m really happy about how this project turned out. iSTEAM is now finishing up its first full year as a registered non-profit! Being able to use my design skills to actively support the my hometown community is incredibly fulfilling and fun. The link to the website is at the top of this page, so feel free to check it out!",
+      },
+    },
+  },
+  keynotes: {
+    project: {
+      image: keynotes,
+      title: "keynotes",
+      categories: [
+        { text: "BRANDING", color: "#F2D2D2" },
+        { text: "PRINT", color: "#D5F2D2" },
+        { text: "UI/UX", color: "#D2F2F2" },
+      ],
+    },
+    link: {
+      url: "https://www.pennkeynotes.com/",
+      display: "VIEW WEBSITE",
+    },
+    about:
+      "After spending four years in a high school a cappella group, I knew I had to join one when I got to Penn. That’s where I found Keynotes: an all-gender, all-genre a cappella group, a group of singers, and above all, great friends! I fell in love with the organization, and Keynotes quickly became my home base. I’m super proud of the work that my fellow members and I have put into the group, and though I’m still in college, I know it’ll be one of the biggest things I miss after I graduate!",
+    info: {
+      role: ["President", "Designer"],
+      tools: ["Photoshop", "InDesign", "Squarespace"],
+      timeline: ["Fall 2021 - Present"],
+    },
+    overview:
+      "Throughout my time at Keynotes, I’ve taken on a few roles. I’m currently the President, but before I was the Music Director, and before that, the Business Manager (or Events, as we call it). These roles really helped me grow as a leader. But how does this a cappella group relate to design? Surprisingly enough, Keynotes was actually the reason that I learned that design was what I wanted to do! In this article, I will walk through a few projects that I took on during my time in Keynotes that showcase my strengths as a designer and leader. If you want to see pretty much everything that I designed for Keynotes, look through the website I made. It’s linked above!",
+    process: {
+      problem: {
+        image: keynotes11,
+        title: "design & keynotes",
+        desc: "How did an a cappella group spark my interest in design?",
+        blurb:
+          "When I first joined Keynotes as a freshman, I had pretty minimal experience in design. I had made a few posters and websites here and there in high school, and knew that I had liked it, but didn’t really think too much of it. However, as my first concert rolled around, an opportunity to try out design came to me, and I took it!",
+        image2: keynotes12,
+        desc2: null,
+        title2: "my first show",
+        blurb2:
+          "For every show that we do, we have a themed photoshoot, which we then use as promo material. At the shows, we give out small show programs that introduce audience members to the group and the songs we’re going to be singing. The President at the time asked the group if anyone knew how to make a program, and I figured that I could probably make something work: I didn’t have too much work to do as a first-semester freshman and I had gone to a few shows already and seen some pretty programs. Plus, the old Keynotes programs were… not cute. So, I gave it a shot.",
+        image3: keynotes13,
+        desc3: null,
+        title3: "the process",
+        blurb3:
+          "The process was pretty similar to any design process that I do now — I did a bit of research, looking at other programs “on the market” (as in other Penn groups’ programs), saw what features needed to be included, and then started making designs from there. I made a ton of drafts, and spent a lot of time, but I found that I was really enjoying it! After the final version was printed, bound, and distributed at our show, it was super cool to see all of the audience members enjoying the programs. From then on, I’ve designed not just the program, but also the theme for every single show - it’s become my semesterly project that I just love to take on.",
+      },
+      research: {
+        image: keynotes21,
+        title: "west coast love",
+        desc: "West Coast Love — Spring 2022",
+        blurb:
+          "This was my first show as an official member of the Keynotes board. I was Events, so I had full reign over how the show was going to look and feel; I was responsible for organizing all show logistics, and this included the theme. I really wanted to switch things up from the last show, so I went for a more retro, colorful, funky vibe. I found a few pictures for inspiration, and got to work. I found a mural near Philly’s Chinatown where we could do our shoot, hired a photographer, sourced some clothes from friends (and Urban Outfitters), and we were ready!",
+        image2: keynotes22,
+        desc2: null,
+        title2: "the shoot",
+        blurb2:
+          "I thought the shoot turned out really nice, and I had a lot of fun with the design of the graphics as well. These are some of my favorite flicks from the shoot! After the shoot, we had to figure out a specific name for the show. We decided on something like California Love, but I felt like that was a bit too specific. Then, as we were brainstorming, one of our group’s favorite songs played in the background — Emotional Oranges’ West Coast Love. And there it was! Keynotes A Cappella Presents — West Coast Love. It had a nice ring to it.",
+        image3: keynotes23,
+        desc3: null,
+        title3: "the program",
+        blurb3:
+          "Having really enjoyed making the programs for the previous concert, I had to do it again. I went for something bolder, just like our photoshoot. I experimented more with fonts and formatting, and made a back cover this time! This program is definitely one of my favorites.",
+      },
+      solution: {
+        image: keynotes31,
+        title: "finesse",
+        desc: "Finesse — Fall 2022",
+        blurb:
+          "Themes aside, Finesse was a really chaotic show to run. We were really struggling on the music front, and our President had gone abroad, meaning that a lot more responsibilities for internal logistics were shifted onto me. It was a great challenge for me and this show definitely pushed my leadership and management skills. The theme that I wanted to go for in this show was Dior. I wanted it to look expensive and fancy. From the inspiration pictures, I knew that we probably needed some sort of studio, so I booked some studio space in the Penn Venture Labs. After a quick clothing haul, we were ready to go.",
+        image2: keynotes32,
+        desc2: null,
+        title2: "the shoot",
+        blurb2:
+          "These pictures came out really nicely. I thought that the amount of detail that each picture had needed its own space, so a lot of the design I tried to keep as simple as possible. This was also the first time I dabbled in Lightroom, as we didn’t have the money to pay the photographer to edit the photos. (Keynotes’ financial struggles are my excuse to DIY things.) I thought I did a pretty good job, and I also found out about black and white, which was great. We went with the show name Finesse because we were doing a Bruno Mars Medley, and I thought it encapsulated the vibe of the pictures.",
+        image3: keynotes33,
+        desc3: null,
+        title3: "the program",
+        blurb3:
+          "However, with the aforementioned chaos surrounding the show, the program got pushed back… and back… until it was two days before the show. I wish I could have spent more time on this one, but I think for what it was, it turned out pretty good. I spent way too much time on the front pages and tried to do something new with the bios, which I think I could have made better with a bit more time. But all things considered, I was happy with it!",
+      },
+      design: {
+        image: keynotes41,
+        title: "solstice",
+        desc: "Solstice — Fall 2023",
+        blurb:
+          "After I switched into the Music Director role, my roles changed from planning out the concerts to making sure that we knew all of our music for the concerts. This was a whole challenge within itself, but I really wanted to try it out, as I’ve been involved with vocal music for almost ten years now. However, I still wanted to be involved in making the theme, because design was starting to be my thing now. This time, we went for a streetwear vibe, and used a frat house as our venue.",
+        image2: keynotes42,
+        desc2: null,
+        title2: "the shoot",
+        blurb2:
+          "For the design, I redesigned the Keynotes logo to emulate Stüssy. I wanted to make each photo look like something you would see in a magazine, and that really informed the layout design. I really liked how this turned out — one of our newbies is just as into the concert themes as I am, so it was great to work with her to make this happen. She took most of the photos, and they looked great. The future of Keynotes is in good hands! I also tried my hand at taking some, which I think turned out pretty well.",
+        image3: keynotes43,
+        desc3: null,
+        title3: "the show",
+        blurb3:
+          "The unfortunate thing with this photoshoot was that it took a bit longer than expected, and the sun set on us. So, half of the photos are during the day, and half is during the night. But, when looking at all of the photos, the perfect show name came to me — solstice! This theme translated super well to the show as well. We found a way to split the songs between the first half and second half, where the first half was the “summer solstice” and the second half was the “winter solstice”. We even did an outfit change, which looked great.",
+      },
+      test: {
+        image: keynotes51,
+        title: "website",
+        desc: "My idea to make a website stemmed from the Solstice show.",
+        blurb:
+          "For the show, I had a friend do videography for the first time, and had our sound guys record the input to each individual mics and send the audio files over. I spent a ton of my winter break putting together the audio mixes of each song that we sang at the show, and then editing them with the video to create much higher quality show videos. I suddenly had a ton of media that I thought would be really good to share, and represented the group well. For the past few years, we had only been using the group Instagram and Facebook pages to promote ourselves — we had a website, but it had pretty poor design and had fallen out of order. After I finished with the videos, I took it upon myself to make a whole new website from the ground up.",
+        image2: keynotes52,
+        desc2: null,
+        title2: "the platform",
+        blurb2:
+          "Since I wanted the website to continue being maintained even after I graduate, I chose to make it on Squarespace, rather than coding it myself. It definitely had its learning curve and its limitations, but I got a hang of it after a little while.",
+        image3: keynotes53,
+        desc3: null,
+        title3: "the content",
+        blurb3:
+          "You can view pretty much everything that I have done in terms of Keynotes’ design on this website’s Media page. It goes through each show, displays the program that I created, along with all of the promotional graphics and show photos! Feel free to browse through it — the link is at the top of this page!",
+      },
+      reflection: {
+        image: keynotes61,
+        title: "reflections",
+        desc: "Overall, my work with Keynotes has been nothing short of rewarding.",
+        blurb:
+          "It’s an amazing community with fantastic people that I love spending time with. I think that’s definitely why I always make time to be super extra with these show themes and productions. At the end of the day, I’ve really enjoyed the time that I’ve invested in the group, and I hope it really shows. I’m now starting my role as the President, so I’ll keep this page updated with the newest shows!",
       },
     },
   },
