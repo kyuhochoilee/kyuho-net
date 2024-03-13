@@ -30,8 +30,8 @@ const Navbar = ({ pageTitle }) => {
           </NavLink>
         </div>
         <div className={styles.liStyles}>
-          <NavLink to="/play" activeClassName={styles.active}>
-            play
+          <NavLink to="/art" activeClassName={styles.active}>
+            art
           </NavLink>
         </div>
         <div className={styles.liStyles}>

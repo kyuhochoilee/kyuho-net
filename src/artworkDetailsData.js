@@ -1,16 +1,9 @@
-import sample from "./img/sample.png";
-import vinci from "./img/vinci.png";
 import zine from "./img/zinecover.png";
 import zinedoc from "./img/zinedoc.png";
 import dada from "./img/dada copy.png";
 import scene from "./img/ourscenecover.png";
 import posterdoc from "./img/posterdoc.png";
 import postercover from "./img/postercover.png";
-import screens2 from "./img/screens2full.png";
-import screens3 from "./img/screens3.png";
-import expo from "./img/expototestflight.png";
-import splash from "./img/splashscreen.png";
-import wireframes from "./img/wireframes.png";
 
 const data = {
   zine: {

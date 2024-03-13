@@ -1,4 +1,3 @@
-import sample from "./img/sample.png";
 import zine from "./img/zinefront.png";
 import poster from "./img/poster.png";
 import scene from "./img/21.png";

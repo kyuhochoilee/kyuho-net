@@ -41,7 +41,7 @@ const ArtworkDetails = () => {
       <div className={styles.projectView}>
         {project && (
           <div className={styles.project}>
-            <NavLink to="/play" className={styles.back}>
+            <NavLink to="/art" className={styles.back}>
               <img className={styles.backArrow} src={arrow} alt="Back" />
               <div className={styles.backText}> back</div>
             </NavLink>
@@ -250,7 +250,7 @@ const ArtworkDetails = () => {
                 })}
             </Accordion>
             <NavLink
-              to="/play"
+              to="/art"
               className={styles.viewLinkButton}
               style={{ marginTop: "50px" }}
             >

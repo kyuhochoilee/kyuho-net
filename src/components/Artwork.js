@@ -4,7 +4,7 @@ import styles from "../styles/Project.module.css";
 
 const Artwork = ({ title, image, category, projectId }) => {
   return (
-    <Link to={`/play/${projectId}`} className="project-link">
+    <Link to={`/art/${projectId}`} className="project-link">
       <div className={styles.projectContainer}>
         <img src={image} alt={title} />
         <div className={styles.textContainer}>
