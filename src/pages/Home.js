@@ -7,7 +7,7 @@ const Home = () => {
     <div className={styles.textContainer}>
       <div className={styles.header}>KYUHO LEE</div>
       <div className={styles.subHeader}>
-        creative digital designer based in boston
+        digital product designer based in boston
       </div>
       <div className={styles.subHeader}>
         junior @ upenn studying design / psych / computer science
@@ -37,6 +37,9 @@ const Home = () => {
         <ul>
           <li>
             <Link to="/work">work</Link>
+          </li>
+          <li>
+            <Link to="/play">play</Link>
           </li>
           <li>
             <Link to="/about">about</Link>

@@ -30,6 +30,11 @@ const Navbar = ({ pageTitle }) => {
           </NavLink>
         </div>
         <div className={styles.liStyles}>
+          <NavLink to="/play" activeClassName={styles.active}>
+            play
+          </NavLink>
+        </div>
+        <div className={styles.liStyles}>
           <NavLink to="/about" activeClassName={styles.active}>
             about
           </NavLink>
