@@ -96,23 +96,30 @@ const About = () => {
               a creative collective that supports unconventional paths at penn.
             </div>
             <div>
-              i’m also a member of{" "}
+              i’m also a member of penn's{" "}
+              <a
+                className={styles.link}
+                href="https://sustainability.upenn.edu/about"
+                target="_blank"
+              >
+                environmental sustainability advisory committee,
+              </a>{" "}
+              the netter center's{" "}
+              <a
+                className={styles.link}
+                href="https://www.nettercenter.upenn.edu/about-center/advisory-boards/student-advisory-board"
+                target="_blank"
+              >
+                student advisory board,
+              </a>{" "}
+              and{" "}
               <a
                 className={styles.link}
                 href="https://icaphila.org/students/"
                 target="_blank"
               >
-                {" "}
-                ica philadelphia's student board
+                ica philadelphia's student board,
               </a>{" "}
-              and penn’s{" "}
-              <a
-                className={styles.link}
-                href="https://www.instagram.com/pennksa/?hl=en"
-                target="_blank"
-              >
-                korean student association.
-              </a>
             </div>
             <div>
               aside from that, i also love writing and producing music, DJing,
