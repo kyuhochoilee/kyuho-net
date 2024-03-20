@@ -23,7 +23,7 @@
 
   .title {
     color: #000;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Arial, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -79,7 +79,7 @@
 
   .title {
     color: #000;
-    font-family: Helvetica Neue;
+    font-family: Helvetica Neue, Arial, sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
