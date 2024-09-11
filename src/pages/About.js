@@ -147,7 +147,7 @@ const About = () => {
                 </div>
               </a>
               <a
-                href="https://drive.google.com/file/d/1kxL0uByXwNkN6X5EBhSp2hhe20v99r7s/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_BLRFKhOtMFNEAyiOPp9kqI7shvXqWNp/view?usp=sharing"
                 target="_blank"
               >
                 <div className={styles.button}>
